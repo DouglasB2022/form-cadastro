@@ -1,26 +1,16 @@
 import { useState } from 'react';
-import  Destino  from './components/Destino';
+import  Destino   from './component/Destino';
 import './assets/App.css';
 
 function App() {      
 
-// const [state, setState] = {paises: []};
-
-
-
-// const ComponentDidMount = async e =>{
-  
-  //   const response = await Destino.get("")
-  //   setState({ ...state, response})
-  //   console.log(state, response.data)
-  // };
   const [formValues, setFormValues] = useState({});
   
   const handleSubmit = e =>{
   e.preventDefault();
   
   const formData   = new FormData(e.target);
-  const data  = Object.fromEntries(formData);
+  const dados  = Object.fromEntries(formData);
   
 }
 
@@ -65,9 +55,7 @@ const handleInputChange = e =>{
         onChange={ handleInputChange || "" }  
         placeholder="Telefone" required />
 
-      <Destino  value={formValues.pais || ""} onChange={handleInputChange}
-      />
-
+      <Destino />
         <button 
         type="submit" >
             Enviar</button>

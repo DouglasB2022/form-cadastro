@@ -10,8 +10,8 @@
   figure, figcaption, footer, header, hgroup, 
   menu, nav, output, ruby, section, summary,
   time, mark, audio, video {  
-    align-items: center;
-  
+    display: flex;    
+    flex-direction: column;
   }
 
 form{
@@ -31,8 +31,6 @@ form{
   
 }
 
-
-
 button{
   align-self: center;
   background-color: #88bcd1;
@@ -43,5 +41,6 @@ button{
   font-size: 1.25rem;
   padding: 16px;
   width: 150px;
+  margin-top: 1rem;
 }
 
